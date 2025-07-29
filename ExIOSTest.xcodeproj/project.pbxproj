@@ -11,9 +11,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1FBFDA3C2E387FB800461A01 /* Exceptions for "ExIOSTest" folder in "ExIOSTest" target */ = {
+		1FF027282E38BC0800473B4D /* Exceptions for "ExIOSTest" folder in "ExIOSTest" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"/Localized: Main.storyboard",
 				Info.plist,
 			);
 			target = 1FBFDA292E387FB400461A01 /* ExIOSTest */;
@@ -24,7 +25,7 @@
 		1FBFDA2C2E387FB500461A01 /* ExIOSTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1FBFDA3C2E387FB800461A01 /* Exceptions for "ExIOSTest" folder in "ExIOSTest" target */,
+				1FF027282E38BC0800473B4D /* Exceptions for "ExIOSTest" folder in "ExIOSTest" target */,
 			);
 			path = ExIOSTest;
 			sourceTree = "<group>";
@@ -150,9 +151,9 @@
 				INFOPLIST_FILE = ExIOSTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -178,9 +179,9 @@
 				INFOPLIST_FILE = ExIOSTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

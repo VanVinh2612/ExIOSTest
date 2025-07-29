@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCell" customModule="ExIOSTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="362"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="362"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOL-rg-GSC">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="362"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KRY-Rw-tU6">
+                                <rect key="frame" x="0.0" y="8" width="338" height="354"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L37-QK-xM0">
+                                <rect key="frame" x="291" y="0.0" width="59" height="28.333333333333332"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBf-SS-dxV">
+                                        <rect key="frame" x="16.333333333333314" y="8" width="26.333333333333329" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="GreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L37-QK-xM0" secondAttribute="height" multiplier="42:20" id="Pck-pz-4mi"/>
+                                    <constraint firstItem="SBf-SS-dxV" firstAttribute="centerY" secondItem="L37-QK-xM0" secondAttribute="centerY" id="RdV-Pj-NUU"/>
+                                    <constraint firstItem="SBf-SS-dxV" firstAttribute="centerX" secondItem="L37-QK-xM0" secondAttribute="centerX" id="ejG-oB-OQw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWitdh">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KRY-Rw-tU6" secondAttribute="bottom" id="4Tg-nh-ijd"/>
+                            <constraint firstItem="KRY-Rw-tU6" firstAttribute="leading" secondItem="cOL-rg-GSC" secondAttribute="leading" id="8Yp-x2-uXP"/>
+                            <constraint firstAttribute="trailing" secondItem="L37-QK-xM0" secondAttribute="trailing" id="gfR-BM-ybn"/>
+                            <constraint firstItem="L37-QK-xM0" firstAttribute="top" secondItem="cOL-rg-GSC" secondAttribute="top" id="hun-Ea-xxh"/>
+                            <constraint firstItem="KRY-Rw-tU6" firstAttribute="top" secondItem="cOL-rg-GSC" secondAttribute="top" constant="8" id="jYh-fJ-oGE"/>
+                            <constraint firstAttribute="trailing" secondItem="KRY-Rw-tU6" secondAttribute="trailing" constant="12" id="tki-JH-ogV"/>
+                            <constraint firstItem="L37-QK-xM0" firstAttribute="width" secondItem="KRY-Rw-tU6" secondAttribute="width" multiplier="42:240" id="zeZ-H1-yfX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cOL-rg-GSC" secondAttribute="trailing" id="YmP-l1-Co5"/>
+                <constraint firstItem="cOL-rg-GSC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f5L-ep-CNO"/>
+                <constraint firstItem="cOL-rg-GSC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ho6-wk-Syk"/>
+                <constraint firstAttribute="bottom" secondItem="cOL-rg-GSC" secondAttribute="bottom" id="q04-Ff-dOU"/>
+            </constraints>
+            <size key="customSize" width="350" height="362"/>
+            <connections>
+                <outlet property="imageView" destination="KRY-Rw-tU6" id="k8Y-M7-0Wz"/>
+                <outlet property="priceLabel" destination="SBf-SS-dxV" id="bee-1C-i7W"/>
+                <outlet property="priceView" destination="L37-QK-xM0" id="A1n-kG-fl2"/>
+            </connections>
+            <point key="canvasLocation" x="352.67175572519085" y="97.887323943661983"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="GreenColor">
+            <color red="0.40392156862745099" green="0.59607843137254901" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
